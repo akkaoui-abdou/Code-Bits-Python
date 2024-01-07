@@ -45,8 +45,8 @@ print(password)
 ```
 ## Fix error
 
-# Language: Python
-# Task Description: Fix the error in the class child to print '93 93'.
+### Language: Python
+### Task Description: Fix the error in the class child to print '93 93'.
 ```python 
 class Parent:
     def __init__(self, param):
@@ -54,7 +54,7 @@ class Parent:
 class Child(Parent):
     def __init__(self, param):
         # Before fixed error
-        super().__init__(self, param)
+        #super().__init__(self, param)
         super().__init__(param)
         self.b = param
     def __str__(self):
