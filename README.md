@@ -60,11 +60,9 @@ class Child(Parent):
     def __str__(self):
         return f"{self.b} {self.a}"
 
-
-## Quiz Python
-Source: https://realpython.com/quizzes/
-
 obj = Child(93)
 
 print(obj.a, obj.b)
 ```
+## Quiz Python
+Source: https://realpython.com/quizzes/
