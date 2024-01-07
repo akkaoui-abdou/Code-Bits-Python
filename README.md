@@ -43,3 +43,24 @@ max_length = 16
 password = "".join(choice(chars) for x in range(randint(min_length, max_length)))
 print(password)
 ```
+## Fix error
+
+# Language: Python
+# Task Description: Fix the error in the class child to print '93 93'.
+```python 
+class Parent:
+    def __init__(self, param):
+        self.a = param
+class Child(Parent):
+    def __init__(self, param):
+        # Before fixed error
+        super().__init__(self, param)
+        super().__init__(param)
+        self.b = param
+    def __str__(self):
+        return f"{self.b} {self.a}"
+
+obj = Child(93)
+
+print(obj.a, obj.b)
+```
